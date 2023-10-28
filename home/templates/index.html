@@ -1,0 +1,346 @@
+{% load static %}<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}"  integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <title>هوش مصنوعی</title>
+
+<body>
+  <header class="shadow">
+    <nav class="navbar navbar-expand-lg bg-white mt-4">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">هوش مصنوعی</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                محصولات
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">لورم ایپسوم</a></li>
+                <li><a class="dropdown-item" href="#">لورم ایپسوم متن</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">لورم ایپسوم متن 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">تماس با ما</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="mt-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h4 class="fw-bold">{{data.titel}}</h4>
+          <h5 class="fw-bold my-4 text-primary">{{ comments_1.text }} </h5>
+          <p>{{data.text}}</p>
+          <button class="btn btn-primary">لورم ایپسوم</button>
+          <button class="btn btn-outline-dark ms-3">لورم ایپسوم</button>
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0">
+
+          <img class="img-fluid" src="{{image_filename}}" alt="">
+<!--          {% static 'image/img1.png' %}-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M-3.38,-1.47 C139.39,276.80 338.59,-121.87 502.25,73.52 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #1b2a4e;"></path>
+    </svg>
+  </div>
+  <section class="bg-light">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4" style="color:white">
+          <i class="bi bi-stack icon fs-2 mb-4"></i>
+          <p class="fw-bold" >{{section_2.titel}}</p>
+          <p class="">{{section_2.text}}</p>
+          <button class="btn btn-outline-light" >
+            توضیحات
+          </button>
+        </div>
+        <div class="col-md-8">
+          <div class="row ">
+            <div class="col-md-6 ">
+              <div class="card shadow text-center">
+                <div class="card-body">
+
+                  <i class="bi bi-graph-up icon fs-2 mb-4"></i>
+                  <p class="card-title fw-bold mb-4" >{{section_3.0.titel}}</p>
+                  <p class="card-text text-muted">{{section_3.0.text}}</p>
+                </div>
+              </div>
+              <div class="card shadow text-center mt-4">
+                <div class="card-body">
+                  <i class="bi bi-grid-1x2-fill icon fs-2 mb-4"></i>
+                  <p class="card-title fw-bold mb-4">{{section_3.1.titel}}</p>
+                  <p class="card-text text-muted">{{section_3.1.text}} </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="card shadow text-center">
+                <div class="card-body">
+                  <i class="bi bi-menu-button-wide-fill icon fs-2 mb-4"></i>
+                  <p class="card-title fw-bold mb-4">{{section_3.2.titel}}</p>
+                  <p class="card-text text-muted">{{section_3.2.text}}</p>
+                </div>
+              </div>
+              <div class="card shadow text-center mt-4">
+                <div class="card-body">
+                  <i class="bi bi-bar-chart-line-fill icon fs-2 mb-4"></i>
+                  <p class="card-title fw-bold mb-4">{{section_3.3.titel}}</p>
+                  <p class="card-text text-muted">{{section_3.3.text}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C169.30,247.20 373.02,-139.63 525.95,177.13 L500.00,0.00 L0.00,0.00 Z"
+        style="stroke: none; fill: #1b2a4e;"></path>
+    </svg>
+  </div>
+  <section>
+    <div class="container">
+      <div class="row text-center">
+        <h4 class="fm-bold mb-4  ">{{section_4.titel}} </h4>
+        <p> {{section_4.text}}</p>
+      </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <div class="card shadow text-center py-4">
+            <div class="card-body">
+              <i class="bi bi-menu-button-wide-fill icon fs-2 mb-4"></i>
+              <p class="card-title fw-bold mb-4"> {{section_5.0.titel}}</p>
+              <p class="card-title fw-bold mb-4"> {{section_5.0.titel}}</p>
+              <p class="card-text text-muted">{{section_5.0.text}}</p>
+              <button class="btn btn-primary mt-4"> توضیحات</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow text-center py-5 card-primary">
+            <div class="card-body">
+              <i class="bi bi-menu-button-wide-fill fs-2 mb-4"></i>
+              <p class="card-title fw-bold mb-4"> {{section_5.1.titel}}</p>
+              <p class="card-title fw-bold mb-4"> {{section_5.1.titel}}</p>
+              <p class="card-title fw-bold mb-4">{{section_5.1.text}}</p>
+              <button class="btn btn-outline-light mt-4"> توضیحات</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow text-center py-4">
+            <div class="card-body">
+              <i class="bi bi-menu-button-wide-fill icon fs-2 mb-4"></i>
+              <p class="card-title fw-bold mb-4"> {{section_5.2.titel}}</p>
+              <p class="card-title fw-bold mb-4"> {{section_5.2.titel}}</p>
+              <p class="card-text text-muted">{{section_5.2.text}}</p>
+              <button class="btn btn-primary mt-4"> توضیحات</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M-3.38,-1.47 C139.39,276.80 338.59,-121.87 502.25,73.52 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #1b2a4e;"></path>
+    </svg>
+  </div>
+  <section class="bg-main">
+    <div class="container">
+      <div class="row text-center text-white">
+        <h4 class="fw-bold mb-4">{{section_6.titel}} </h4>
+        <p>{{section_6.text}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10 mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="{{image_gallery_1}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="{{image_gallery_2}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="{{image_gallery_3}}" class="d-block w-100" alt="...">
+            </div>
+
+
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col mt-5">
+        <button class="btn btn-outline-light offset-md-1">مشاهده گالری </button>
+      </div>
+
+
+    </div>
+  </section>
+  <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C169.30,247.20 373.02,-139.63 525.95,177.13 L500.00,0.00 L0.00,0.00 Z"
+        style="stroke: none; fill: #1b2a4e;"></path>
+    </svg></div>
+
+
+  <section>
+    <div class="container">
+      <div class="row text-center">
+        <h4 class="fw-bold mt-4">{{section_7.titel}} </h4>
+        <p>{{section_7.text}}</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">آدرس ایمیل</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+              <label class="form-label">پیام</label>
+              <textarea type="password" class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">ارسال پیام</button>
+          </form>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <img class="img-fluid" src="{% static 'image/clean-inbox.png' %}" alt="">
+        </div>
+      </div>
+      <div class="row gy-5 mt-5 text-center">
+        <div class="col-md-2">
+          <img width="70" class=" cssanimation hu__hu__ img-fluid" src="{% static 'image/1 (1).svg' %}" alt="">
+
+        </div>
+        <div class="col-md-2">
+          <img width="70" class="cssanimation hu__hu__ img-fluid" src="{% static 'image/1 (2).svg' %}" alt="">
+
+        </div>
+        <div class="col-md-2">
+          <img width="70" class="cssanimation hu__hu__ img-fluid" src="{% static 'image/1 (3).svg' %}" alt="">
+
+        </div>
+        <div class="col-md-2">
+          <img width="70" class="cssanimation hu__hu__ img-fluid" src="{% static 'image/1 (4).svg' %}" alt="">
+
+        </div>
+        <div class="col-md-2">
+          <img width="70" class="cssanimation hu__hu__ img-fluid" src="{% static 'image/1 (5).svg' %}" alt="">
+
+        </div>
+        <div class="col-md-2">
+          <img width="70" class="cssanimation hu__hu__ img-fluid" src="{% static 'image/1 (6).svg' %}" alt="">
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section>
+    <div class="row text-center">
+      <div class="col-md-10 cssanimation hu__hu__ img-fluid">
+
+
+       
+
+
+
+      </div>
+    </div>
+  </section>
+  <div style="height: 150px; overflow: hidden; "><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C-68.56,101.15 240.12,206.73 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+        style="stroke: none; fill: #F0FFFF;"></path>
+    </svg></div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="{% static 'js/bootstratrap.bundle.min.js'%}"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+</body>
+
+</html>
